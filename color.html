@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+  
+  <script type="text/javascript">
+    
+    var app = angular.module('app', []);
+    app.controller('ColorController', function($scope){
+      
+     $scope.input = 'green';
+      
+      
+      
+    });
+    
+    
+    
+    
+  </script>
+  
+</head>
+<body ng-app="app">
+  
+  <div ng-controller="ColorController">
+    <h1 ng-style="{color: input}"> {{ input }} </h1>
+  
+   <input type="text" ng-model="input" placeholder="type in a color"></input>
+  
+  </div>
+</body>
+</html>
